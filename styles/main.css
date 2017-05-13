@@ -5,17 +5,19 @@ html, body {
 
 #banner {
     height: 80%;
+    width: 100%
+    background-repeat:no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
+    background-size: cover;
     background-position: center;
     background-image: url("../images/artmay-banner.jpg");
     /*background-attachment: fixed;*/
 }
 
-@media (max-width: 575px){
-    #banner{
+@media (max-width: 575px) {
+    #banner {
         background-attachment: scroll;
     }
 }
@@ -125,7 +127,7 @@ footer {
 }
 
 #our-story {
-    height: 80%;
+    height: 70%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -133,45 +135,144 @@ footer {
     background-position: center;
     background-image: url("../images/Artmay-3.jpg");
     background-attachment: fixed;
-    padding-top: auto;
-    padding-bottom: auto;
+    margin-top: 4rem;
+    /*padding-top: 2rem;*/
+    /*padding-bottom: auto;*/
 }
 
-.title{
-  padding-top: 8rem;
-}
-.about{
-  /*margin-left: 2rem;*/
-  float: left;
-  border-right: solid;
-  border-color: rgb(204, 122, 26);
-  padding-right: 5rem;
-  padding-bottom: 3rem;
-}
-.detail{
-  padding-top: 1rem;
-}
-.artmay{
-  /*padding-top: 3rem;*/
-  display: inline-block;
+@media (max-width:600px) {
+    .about {
+        display: none;
+    }
+    .pic {
+        padding-top: 5rem;
+        /*padding-left: 2rem;*/
+        float: left;
+        margin-right: 2rem;
+        padding-left: 0rem;
+    }
+    .cards {
+        width: 50%;
+        margin-top: 2rem;
+    }
+    #footer_links {
+      /*display:inline-table;*/
+      /*margin-left: 40%;*/
+
+    }
+
+    .ft-nav-link::after {
+      clear: both;
+    }
+    .ft-nav-link {
+      color: #787878;
+      font-size: 20px;
+      margin-left: 2%;
+      display: block;
+      float: left;
+    }
+
+    .ft-nav-link:hover {
+      color: #232323;
+    }
+
+    .foot{
+      margin-top: 3rem;
+
+    }
+    #footer_social_icons {
+
+      /*margin-left: 10%;*/
+      margin-right: auto;
+      margin-left: auto;
+      /*display: inline;*/
+      /*float: left;*/
+    }
+    #footer_artmay_icon{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
-.pic{
-  padding-top: 5rem;
-  padding-left: 4rem;
-  float: left;
-  margin-right: 2rem;
-  /*display: inline-block;*/
+.title {
+    padding-top: 4rem;
 }
-.container{
-  padding-top: 3rem;
+.intro{
+  display: block;
 }
-.describe{
-  margin-top: 2rem;
+.about {
+    /*margin-left: 2rem;*/
+    float: left;
+    border-right: solid;
+    border-color: rgb(204, 122, 26);
+    padding-right: 5rem;
+    padding-bottom: 3rem;
 }
 
+.detail {
+    padding-top: 1rem;
+}
+
+@media (min-width:600px) {
+    .pic {
+        padding-top: 5rem;
+        padding-left: 2rem;
+        float: left;
+        margin-right: 2rem;
+    }
+    .cards {
+        height: 50%;
+        width: 19%;
+    }
+    #footer_links {
+      display: block;
+    }
+    .ft-nav-link {
+      color: #787878;
+      font-size: 0px;
+      margin-left: 2%;
+      display: block;
+    }
+
+    .ft-nav-link:hover {
+      color: #232323;
+    }
+
+    .foot{
+      margin-top: 3rem;
+    }
+    #footer_social_icons {
+      margin-left: 10%;
+      margin-right: auto;
+      /*display: inline;*/
+      float: left;
+    }
+}
+
+.intro-title {
+    margin-top: 2rem;
+}
+
+.container {
+    padding-top: 3rem;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.describe {
+    margin-top: 2rem;
+}
+
+.items {
+    float: left;
+    padding-top: 2rem;
+}
+.items ::after{
+  clear: left;
+}
 #footer {
-  height: 35%;
+  height: 40%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: contain;
@@ -182,49 +283,4 @@ footer {
   padding-top: auto;
   padding-bottom: auto;
   /*display: flex;*/
-}
-
-#footer_social_icons {
-  margin-left: 10%;
-  margin-right: auto;
-  display: inline;
-  float: left;
-}
-
-#footer_links {
-  display: flex-block;
-  margin-left: 40%;
-}
-
-#footer_links::after {
-  clear: both;
-}
-
-/*#footer_artmay_icon {
-  float: left;
-  display: block;
-  margin-left: auto;
-  margin-top: auto;
-}*/
-
-.ft-nav-link {
-  color: #787878;
-  font-size: 20px;
-  margin-left: 2%;
-  display: inline;
-}
-
-.ft-nav-link:hover {
-  color: #232323;
-}
-
-/*#words {
-  display: inline-block;
-  margin-left: 10px;
-}*/
-.foot{
-  /*display: inline-block;*/
-
-
-  margin-top: 5rem;
 }
